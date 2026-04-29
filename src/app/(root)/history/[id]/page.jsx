@@ -32,7 +32,7 @@ export default function HistoryIdPage() {
               <BreadcrumbItem>
                 <BreadcrumbLink href="/history">History</BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbSeparator className="hidden md:block" />
+              <BreadcrumbSeparator />
               <BreadcrumbItem>
                 <BreadcrumbPage>{id}</BreadcrumbPage>
               </BreadcrumbItem>

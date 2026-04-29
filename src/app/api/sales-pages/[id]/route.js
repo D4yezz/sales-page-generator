@@ -3,7 +3,7 @@ import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
-export async function GET(context) {
+export async function GET(req, context) {
   const { id } = await context.params;
   const detailPages = await supabase
     .from("sales_pages")
