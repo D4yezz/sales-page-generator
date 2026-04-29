@@ -175,7 +175,8 @@ export function ProductInputForm({ onSubmit, isLoading, initialData = null }) {
               name="price"
               value={formData.price}
               onChange={handleChange}
-              placeholder="E.g., $99/month or $999 one-time"
+              type={"number"}
+              placeholder="E.g., $99"
               className="text-white bg-zinc-900 border-zinc-600 placeholder:text-zinc-500 focus-visible:ring-zinc-300"
             />
           </div>
