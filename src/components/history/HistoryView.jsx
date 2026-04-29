@@ -6,6 +6,7 @@ import { fetchSalesPages, deleteSalesPage } from "@/service/generate.service";
 import { SalesPageCard } from "./SalesPageCard";
 import { DeleteConfirmModal } from "./DeleteConfirmModal";
 import { Skeleton } from "@/components/ui/skeleton";
+import { File } from "lucide-react";
 
 function HistorySkeleton() {
   return (
@@ -95,8 +96,9 @@ export default function HistoryView() {
 
   if (pages.length === 0) {
     return (
-      <div className="grid grid-cols-1 gap-4 p-8 text-center border rounded-lg bg-linear-to-br from-gray-700 to-zinc-800 border-zinc-700">
-        <p className="text-lg text-zinc-300">📄</p>
+      <div className="flex text-zinc-200 flex-col items-center justify-center gap-4 p-8 h-[60vh] text-center border rounded-lg bg-linear-to-br from-gray-700 to-zinc-800 border-zinc-700">
+        <File size={54} />
+
         <p className="font-semibold text-white">No sales pages yet</p>
         <p className="text-sm text-zinc-400">
           Create your first sales page to see it here

@@ -185,8 +185,7 @@ export function RegisterForm({ className, ...props }) {
                   Create Account
                 </Button>
                 <FieldDescription className="text-center">
-                  Already have an account?{" "}
-                  <Link href="/auth/login">Sign in</Link>
+                  Already have an account? <Link href="/auth/login">Login</Link>
                 </FieldDescription>
               </Field>
             </FieldGroup>

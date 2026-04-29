@@ -68,8 +68,8 @@ Unique Selling Point: ${usp || "Not provided"}
 Create a comprehensive sales page with attractive, professional colors to turn visitors into customers.`;
 
     const response = await genAI.models.generateContent({
-      model: "gemini-2.5-flash",
-      // model: "gemini-3-flash-preview",
+      // model: "gemini-2.5-flash",
+      model: "gemini-3-flash-preview",
       contents: systemPrompt + "\n\n" + userPrompt,
     });
 
